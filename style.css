@@ -1,0 +1,883 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+:root{
+    --primary-color:#28CB8B;
+    --Secondary:#263238;
+    --info:#2194f3;
+    --Shade-1:#43A046;
+    --font-size-15:15px;
+    --nutral:#ffffff;
+    --butoon:#4CAF4F;
+    --nutral-silver:#F5F7FA;
+    --nutral-gray:#717171;
+}
+.m-b-20{
+    margin-bottom: 20px;
+}
+.m-b-15{
+    margin-bottom: 15px;
+}
+.justify-cont-center{
+    justify-content: center;
+}
+.dis-grid-colum-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.h-40{
+    height: 40px;
+}
+.dis-flex-flex-1-justify-center{
+    display: flex;
+    flex: 1;
+    justify-content: center ;
+}
+.mar-07-0-rem{
+    margin: 0.7rem 0;
+}
+.pad-l-r-30{
+    padding: 0 30px;
+}
+.pad-t-b-50{
+    padding: 50px 0;
+}
+.pad-r-11rem{
+    padding: 0 11rem 0 0;
+}
+.pad-r-7rem{
+    padding: 0 7rem 0 0;
+}
+.padding-0-5rem{
+    padding: 0 5rem;
+}
+.dis-flex{
+    display: flex;
+}
+.justify-space-betw{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.w-280{
+    width: 280px;
+}
+.aling-center{
+    align-items: center;
+}
+.w-30rem{
+    width: 30rem;
+}
+.w-100{
+    width:100%;
+}
+.flex-coulm{
+    display: flex;
+    flex-direction: column;
+}
+.li-height-20{
+    line-height: 20px;
+}
+.li-height-40{
+    line-height: 40px;
+}
+.w-10-rem{
+    width: 10rem;
+}
+.fc-green{
+    color: #4CAF4F;
+}
+.fc-white{
+    color: #F5F7FA;
+}
+.fc-gray{
+    color:#4D4D4D;
+}
+.fs-45{
+    font-size:45px;
+} 
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fw-700{
+    font-weight: 700;
+} 
+.pad-bottom-15{
+    padding: 0 0 15px 0;
+}
+.bg-cl-linear-gradiant-silver{
+    background: rgb(224,224,224);
+    background: linear-gradient(90deg, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%);
+}
+.gap-30{
+    gap: 30px;
+}
+.gap-50{
+    gap: 50px;
+}
+.bg-color-nutral-silver{
+    background-color: var(--nutral-silver);
+}
+.anc-styling{
+    text-decoration: none;
+    color: var(--butoon);
+    display: flex;
+    align-items: center;
+}
+
+/* header-styling */
+.menu-icon{
+    display: none;
+}
+.btn-com{
+    background: var(--butoon);
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 4px;
+    color:var(--nutral) ;
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 1.2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sing-login{
+    display: flex;
+}
+    .logo img{
+        height: 16px;
+    }
+.category span{
+    font-size: var(--font-size-15);
+    border-bottom: 0.5px solid transparent;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin: 0 20px 0 0;
+    padding: 0 0 5px 0;
+}
+.category span::after{
+    width: 100%;
+    content: "";
+    height: 2px;
+    background-color: var(--butoon);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scaleX(0.0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.category span:hover::after{
+   transform:scaleX(1) ;
+}
+.category span:hover{
+    cursor: pointer;
+}
+.sing-login{
+    gap: 10px;
+}
+.btn-1{
+    padding: 10px 20px;
+}
+.btn-com:hover{
+    background-color: white;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color  );
+}
+.login-btn{
+    background-color: transparent;
+    border: none;
+    color: var(--butoon);
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0.5px solid transparent;
+}
+.login-btn:hover{
+    cursor: pointer;
+    background-color: #e7e8eb;
+}
+.login-btn:focus{
+    border: 0.5px solid #4D4D4D;
+}
+.login-btn:active{
+    background-color: #c9caca;
+   
+}
+/* main-box-styling */
+.hero{
+    height: calc(100vh - 75.38px);
+    padding: 0 5rem 0.2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about-company{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-2{
+    width: fit-content;
+    padding: 15px 22px;
+}
+.button-dot{
+    display: flex;
+    margin: 15px 0 60px 0
+}
+.hero span img{
+    height: 7px;
+}
+.scroll-dots span{
+    height: 5px;
+    border-radius: 50%;
+    width: 5px;
+    margin-right: 2px;
+}
+
+.scroll-dots span:nth-child(1){
+  background-color: var(--butoon);
+}
+.scroll-dots span:nth-child(2){
+    background-color: var(--butoon);
+    opacity: 30%;
+  }
+  .scroll-dots span:nth-child(3){
+    background-color: var(--butoon);
+    opacity: 30%;
+  }
+.scroll-dots{
+    display: flex;
+    justify-content: center;
+}
+
+/* computer-men-styling */
+.computer-men img{
+    height: 25rem;
+}
+/* our-compani-styling */
+.client-component{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.our-client{
+    padding: 5rem 0rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.client-logos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+}
+.client-logos img{
+    height: 32px;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+}
+.client-logos img:hover{
+    scale: 1.4;
+    filter: contrast(1);
+    filter: drop-shadow(20px 15px 5px black);
+    cursor: pointer;
+}
+.sentence{
+    line-height: 3rem;
+    text-align: center;
+}
+/* styling-info-about-work */
+.manegment-info{
+    margin: 3rem 0;
+}
+.info-about-work{
+    padding: 2rem 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.info-about-work img{
+    width: 3rem;
+}
+.o-a-g-com{
+    width: 200px;
+    padding: 18px 10px;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: 0.3s all ease-in-out;
+}
+.o-a-g-com:hover{
+    scale: 1.2;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* authentication section styling */
+.authentication-section{
+    margin: 3rem 0;
+}
+.girl-boy-phone img{
+    height: 25rem;
+}
+.learn-more-btn{
+    width: fit-content;
+    padding: 10px 20px;
+}
+.learn-more-btn:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color  );
+}
+.info-of-invest-member{
+    padding: 4rem 7rem;
+    margin: 5rem 0;
+}
+.company-member{
+    row-gap: 1rem;
+}
+.desing-your-footer{
+    margin: 5rem 0;
+    padding: 0 5rem;
+}
+.desing-your-footer-info{
+    padding: 0 1rem;
+}
+.tesla-info{
+    margin: 3rem 0;
+    padding:4rem 5rem;
+    background-color: var(--nutral-silver);
+}
+.tesla-img img{
+    height: 226px;
+}
+.text-sec{
+    gap: 15px;
+    width: 100%;
+}
+.text-sec span:nth-child(3){
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.company-icon img{
+    height: 38px;
+}
+.company-icon a{
+    text-decoration: none;
+    color: var(--butoon);
+    font-size: 12px;
+}
+.company-icon a img{
+    height: 20px;
+}
+.marketing-sec{
+    padding: 3rem 5rem;
+}
+.new-marketing{
+    text-align: center;
+    padding: 2rem 0;
+}
+.type-marketing{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.info-c{
+    position: relative;
+    width: fit-content;
+    display: flex;
+}
+.info-c img{
+    height: 286px;
+    width: 368px;
+}
+.info-c a{
+    text-decoration: none;
+    color: var(--butoon);
+    display: flex;
+    padding: 10px 0 0 0;
+}
+.info-c a img{
+    height: 20px;
+    width: 20px;
+}
+.reading-sec{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F5F7FA;
+    padding: 35px 30px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 7px #aaa;
+    position: absolute;
+    bottom: -19%;
+    left: 5%;
+}
+.demo{
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--nutral-silver);
+}
+.demo-text span{
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.demo-button img{
+    height: auto;
+    width: 20px;
+    color: white;
+}
+/* footer section */
+.footer{
+    padding: 4rem 5rem;
+    background-color: #263238;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.company-name img{
+    height: 30px;
+}
+.company-name,.social,.legal-sec{
+    margin-bottom: 20px;
+}
+.social img{
+    height: 40px;
+}
+.company-support-stay-up-to-date{
+    width: 50%;
+}
+.input{
+    background-color: #d9dbe183;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1rem 3rem 1rem 2rem;
+    border-radius: 7px;
+}
+.stay-up-to-date img{
+   position: absolute;
+   height: 20px;
+   top: 15px;
+   right: 15px;
+   width: 20px;
+}
+.input-filed{
+    position: relative;
+}
+::placeholder{
+    color: white;
+}
+.sentence span:first-child{
+    width: 70%;
+    margin: 0 auto;
+}
+/* media qurey section */
+@media (max-width:1285px) {
+    .type-marketing{
+        scale: 0.8;
+        gap: 25px;
+    }
+    .info-c img {
+        width: 325px;
+    }
+    .marketing-sec {
+        padding: 3rem 0;
+    }
+}
+@media (max-width:1215px){
+    .demo-text span{
+        font-size: 30px ;
+      }
+    .company span:first-child{
+        font-size: 15px;
+    }
+    .support span:first-child{
+        font-size: 15px;
+    }
+    .stay-up-to-date span:first-child{
+        font-size: 15px;
+    }
+    .company span{
+        font-size: 12px;
+    }
+    .support span{
+        font-size: 12px;
+    }
+    .stay-up-to-date span{
+        font-size: 12px;
+    }
+}
+@media (max-width:1050px){
+
+    .organisation span:nth-last-child(2){
+        font-size: 20px;
+    }
+    .associations span:nth-last-child(2){
+        font-size: 20px;
+    }
+    .group span:nth-last-child(2){
+        font-size: 20px;
+    }
+    .o-a-g-com span:nth-child(3){
+        font-size: 1rem;
+    }
+    .new-marketing span:first-child{
+        font-size: 30px;
+    }
+    .hero span:nth-child(1){
+        font-size: 30px;
+    }
+    .hero span:nth-child(2){
+        font-size: 30px;
+    }
+    .btn-2{
+        padding: 10px 15px;
+    }
+    .category span{
+        font-size: 12px;
+    }
+    .info-c img {
+        width: 325px;
+    }
+    .marketing-sec {
+        padding: 3rem 0;
+    }
+}
+@media (max-width:1000px){
+    .type-marketing {
+        scale: 1.05;
+        width: 90%;
+        margin: 59px auto;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+    .first-line img{
+        height: 30px;
+    }
+    .second-line img{
+        height: 30px;
+    }
+    .first-line span:first-child{
+        font-size: 20px;
+    }
+    .second-line span:first-child{
+        font-size: 20px;
+    }
+    .girl-boy-phone img{
+        height: 20rem;
+    }
+    .computer-men img{
+        height: 20rem;
+    }
+      .input{
+        padding: 1rem 1rem 1rem 2rem;
+      }
+      .new-marketing{
+        margin-bottom: 3rem;
+      }
+      .get-demo-btn {
+        padding: 6px 6px;
+        font-size: 11px;
+    }
+    .footer{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .company-support-stay-up-to-date {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+    .company-icon img{
+        scale: 0.9;
+    }
+}
+@media (max-width:950px) {
+    .company-icon img{
+        scale: 0.5;
+    }
+    .sentence span:first-child{
+     font-size: 30px;
+    }
+    .info-of-invest-member {
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .company-member{
+        margin-top: 32px;
+        flex-direction: row;
+    }
+    .first-line,.second-line{
+        flex-wrap: wrap;
+    }
+    .reinvest-info{
+        text-align: center;
+        gap: 0.3rem;
+    }
+
+    .category span{
+        margin: 0 15px 0 0;
+    }
+}
+@media (max-width:860px) {
+    .company-name img{
+        height: 20px;
+    }
+    .social img{
+        height: 30px;
+        width: 30px;
+    }
+    .about-company{
+        flex-direction: column;
+        text-align: center;
+    }
+    .button-dot{
+        display: flex;
+        justify-content: center;
+    }
+    .computer-men img{
+        height: 250px;
+        width:auto;
+    }
+  .category{
+    display: none;
+  }
+  .menu-icon{
+    display: contents;
+  }
+  .menu-icon img{
+    height: 20px;
+    width: 20px;
+  }
+  .menu-icon:hover{
+    cursor: pointer;
+  }
+  .info-about-work{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+  }
+  .o-a-g-com{
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  .company-icon{
+    flex-wrap: wrap;
+    margin: 0 1rem 0 0;
+    row-gap: 15px;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .company-support-stay-up-to-date{
+    width: 100%;
+  }
+  .social-media-sec{
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width:700px) {
+    .info-about-work{
+        flex-direction: column;
+    }
+    .nav{
+        padding: 1rem 1rem;
+    }
+    .scroll-dots{
+        padding: 10px 0;
+    }
+    .hero{
+        height: fit-content;
+        padding: 0 1rem;
+    }
+    .desing-your-footer{
+        padding: 0 1rem;
+    }
+    .desing-your-footer-info div{
+        width: 100%;
+    }
+    .desing-your-footer-info div button{
+        margin: 0 auto;
+    }
+    .company-name img{
+        height: 15px;
+    }
+    .legal-sec span{
+        font-size: 10px;
+    }
+    .info-of-invest-member{
+        padding: 2rem 1rem;
+    }
+    .tesla-info{
+        padding: 3rem 1rem;
+    }
+    .authentication-section{
+        padding: 0 1rem;
+    }
+    .footer{
+        padding: 3rem 1rem;
+    }
+    .company-member{
+        flex-direction: column;
+    }
+    .company-icon a{
+        font-size: 12px;
+    }
+    .about-company{
+        flex-direction: column;
+    }
+    .tesla-info{
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+    .disc-of-company{
+        width:90%;
+        margin: 0 auto;
+    }
+}
+@media (max-width:600px) {
+    .info{
+        text-align: center;
+    }
+    .hero{
+        height: 90svh;
+    }
+    .authentication-section{
+        flex-direction: column;
+    }
+    .authentication-info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .desing-your-footer{
+        flex-direction: column;
+    }
+    .desing-your-footer-info{
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .text-sec{
+        text-align: center;
+    }
+        .type-marketing img {
+            height: 15rem;
+            width: 20rem;
+    }
+    .new-marketing span:nth-child(2){
+        width: 87%;
+    }
+    .our-client span:nth-child(2){
+        text-align: center;
+    }
+    .our-client img{
+        height: 20px;
+        width: auto;
+    }
+    .our-client img:hover{
+        scale: 1.2;
+        filter: contrast(1);
+        filter: drop-shadow(8px 10px 14px black);
+        cursor: pointer;
+    }
+    .our-client{
+        padding: 3rem 0;
+    }
+    .input{
+        padding: 0.5rem 0.7rem 0.5rem 1rem;
+    }
+    .stay-up-to-date img{
+        top: 6px;
+    }
+    .social-media-sec{
+        flex-direction: column;
+        height: 22vh;
+    }
+    .company-support-stay-up-to-date{
+        flex-wrap: wrap;
+
+    }
+    .info span{
+        margin:0 0 5px 0;
+    }
+    .computer-men img{
+        height: 15rem;
+    }
+    .authentication-section{
+        text-align: center;
+    }
+    .authentication-section div{
+        width: 100%;
+    }
+    .authentication-section div button{
+        margin: 0 auto;
+    }
+    .authentication-section span:nth-child(2){
+        font-size: 1rem;
+    }
+    .reinvest-info span:nth-child(3){
+        font-size: 1rem;
+    }
+    .desing-your-footer-info span:nth-child(2){
+        font-size: 1rem;
+    }
+    .text-sec span:first-child{
+        font-size: 1rem;
+    }
+    .new-marketing span:nth-child(2){
+        font-size: 1rem;
+    }
+    .legal-sec span{
+        font-size: 1rem;
+    }
+    .button-dot{
+    justify-content: center;
+    }
+    .sentence{
+        line-height: 1.5rem;
+        margin-bottom: 13px;
+    }
+    .sentence span:first-child {
+        font-size: 18px;
+    }
+    input{
+        width: 300px;
+    }
+}
